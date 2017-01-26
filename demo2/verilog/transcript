@@ -1,0 +1,57 @@
+# vsim -lib __work -c proc_hier_pbench 
+# //  ModelSim SE 5.8b Jan 01 2004 Linux 2.6.32-573.7.1.el6.x86_64
+# //
+# //  Copyright Model Technology, a Mentor Graphics Corporation company, 2004
+# //                         All Rights Reserved.
+# //                   UNPUBLISHED, LICENSED SOFTWARE.
+# //         CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+# //        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS.
+# //
+# Loading __work.proc_hier_pbench
+# Loading __work.proc_hier
+# Loading __work.clkrst
+# Loading __work.proc
+# Loading __work.dff
+# Loading __work.stall_flush
+# Loading __work.stall
+# Loading __work.flush
+# Loading __work.forwarding
+# Loading __work.fetch
+# Loading __work.branchjump
+# Loading __work.cla16
+# Loading __work.cla4
+# Loading __work.memory2c
+# Loading __work.decode
+# Loading __work.rf_bypass
+# Loading __work.rf
+# Loading __work.decoder3_8
+# Loading __work.register
+# Loading __work.reg_cell
+# Loading __work.mux2_1
+# Loading __work.not1
+# Loading __work.nor2
+# Loading __work.eightmux8_1
+# Loading __work.mux8_1
+# Loading __work.mux4_1
+# Loading __work.control
+# Loading __work.sign_extend
+# Loading __work.computewritereg
+# Loading __work.execute
+# Loading __work.alu_control
+# Loading __work.alu
+# Loading __work.alu_arith_block
+# Loading __work.addr16
+# Loading __work.shift_rotate
+# Loading __work.shift_rotate_0
+# Loading __work.shift_rotate_2
+# Loading __work.shift_rotate_4
+# Loading __work.shift_rotate_8
+# Loading __work.non_alu
+# Loading __work.branch_control
+# Loading __work.memory
+# Loading __work.writeback
+run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 1905 ns  Iteration: 0  Instance: /proc_hier_pbench

@@ -1,0 +1,23 @@
+SIMLOG:: Cycle           4 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle           5 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle           6 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle           7 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0003     0000
+SIMLOG:: Cycle           8 PC:     zzzz I:     zzzz R: 1   1     0003 M: 0 0     0006     0000
+SIMLOG:: Cycle           9 PC:     zzzz I:     zzzz R: 1   2     0006 M: 0 0     0000     0000
+SIMLOG:: Cycle          10 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle          11 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle          12 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle          13 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle          14 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     0000     0000
+SIMLOG:: Cycle          15 PC:     zzzz I:     zzzz R: 0   0     0000 M: 1 0     0003     0000
+SIMLOG:: Cycle          16 PC:     zzzz I:     zzzz R: 1   3     0608 M: 0 0     0000     0000
+SIMLOG:: Cycle          17 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     060e     0006
+SIMLOG:: Cycle          18 PC:     zzzz I:     zzzz R: 1   3     060e M: 0 0     060e     060e
+SIMLOG:: Cycle          19 PC:     zzzz I:     zzzz R: 1   4     060e M: 0 0     0000     0000
+SIMLOG:: Cycle          20 PC:     zzzz I:     zzzz R: 0   0     0000 M: 0 0     000c     0000
+SIMLOG:: Processor halted
+
+SIMLOG:: sim_cycles          20
+
+SIMLOG:: inst_count           6
+

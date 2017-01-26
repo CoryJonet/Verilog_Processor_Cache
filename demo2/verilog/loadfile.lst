@@ -1,0 +1,29 @@
+0000 c103 lbi r1, 3
+0002 c206 lbi r2, 6
+0004 0800 nop
+0006 0800 nop
+0008 0800 nop
+000a 0800 nop
+000c 0800 nop
+000e 0800 nop
+0010 8960 ld r3, r1, 0
+0012 db4c add r3, r3, r2
+0014 dc70 add r4, r4, r3
+0016 0000 halt
+0018 c50c lbi r5, 12
+001a 8223 st r1, r2, 3
+001c c40f lbi r4, 15
+          //lbi r6, 18
+          //nop
+          //nop
+          
+          //add r6, r4, r5
+          //lbi r7, 21
+          
+          //lbi r2, 99
+          //nop
+          //nop
+          //nop
+          //lbi r1, 100
+          //add r3, r1, r2
+          
