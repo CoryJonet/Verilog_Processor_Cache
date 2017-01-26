@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : reference
+Design : proc
+Version: B-2008.09-SP3
+Date   : Thu Mar 17 10:45:26 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             gscl45nm       2.346500       1      2.346500  
+AND2X2             gscl45nm       2.815800      46    129.526798  
+AOI21X1            gscl45nm       2.815800       5     14.079000  
+AOI22X1            gscl45nm       3.285100      15     49.276500  
+BUFX2              gscl45nm       2.346500      49    114.978496  
+BUFX4              gscl45nm       2.815800       3      8.447400  
+INVX1              gscl45nm       1.407900     149    209.777096  
+INVX2              gscl45nm       1.877200      21     39.421200  
+INVX4              gscl45nm       3.285100      18     59.131800  
+INVX8              gscl45nm       3.285100       7     22.995700  
+MUX2X1             gscl45nm       3.754400      12     45.052800  
+NAND3X1            gscl45nm       2.346500       1      2.346500  
+OAI21X1            gscl45nm       2.815800      26     73.210799  
+OR2X2              gscl45nm       2.815800      12     33.789599  
+alu                            3257.411238       1   3257.411238  h
+alu_control                     227.141196       1    227.141196  h
+branch_control                   21.118500       1     21.118500  h
+branchjump                     1892.686863       1   1892.686863  h
+control                         229.956995       1    229.956995  h
+dff_128                          14.079000       1     14.079000  h, n
+dff_129                          14.079000       1     14.079000  h, n
+dff_130                          14.079000       1     14.079000  h, n
+dff_131                          14.079000       1     14.079000  h, n
+dff_132                          14.079000       1     14.079000  h, n
+dff_133                          14.079000       1     14.079000  h, n
+dff_134                          14.079000       1     14.079000  h, n
+dff_135                          14.079000       1     14.079000  h, n
+dff_136                          14.548300       1     14.548300  h, n
+dff_137                          14.079000       1     14.079000  h, n
+dff_138                          14.548300       1     14.548300  h, n
+dff_139                          14.079000       1     14.079000  h, n
+dff_140                          14.079000       1     14.079000  h, n
+dff_141                          14.079000       1     14.079000  h, n
+dff_142                          14.079000       1     14.079000  h, n
+dff_143                          14.079000       1     14.079000  h, n
+memory2c_0                    18901.995785       1  18901.995785  h, n
+memory2c_1                    15278.999875       1  15278.999875  h, n
+non_alu                         266.093095       1    266.093095  h
+rf                             8092.609015       1   8092.609015  h, n
+sign_extend                     111.693398       1    111.693398  h
+-----------------------------------------------------------------------------
+Total 40 references                                 49310.288743
+1
