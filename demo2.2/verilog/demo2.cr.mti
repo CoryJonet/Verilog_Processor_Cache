@@ -1,0 +1,337 @@
+/afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nor2.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nor2.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module nor2
+
+Top level modules:
+	nor2
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/branchjump.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/branchjump.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module branchjump
+
+Top level modules:
+	branchjump
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/flush.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/flush.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module flush
+
+Top level modules:
+	flush
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/branch_control.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/branch_control.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module branch_control
+
+Top level modules:
+	branch_control
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/computewritereg.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/computewritereg.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module computewritereg
+
+Top level modules:
+	computewritereg
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.1/verilog/memory2c_align.syn.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.1/verilog/memory2c_align.syn.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memory2c_align
+
+Top level modules:
+	memory2c_align
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/stall.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/stall.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module stall
+
+Top level modules:
+	stall
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nor3.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nor3.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module nor3
+
+Top level modules:
+	nor3
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/alu_arith_block.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/alu_arith_block.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module alu_arith_block
+
+Top level modules:
+	alu_arith_block
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nand2.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nand2.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_0.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_0.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module shift_rotate_0
+
+Top level modules:
+	shift_rotate_0
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/cla4.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/cla4.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module cla4
+
+Top level modules:
+	cla4
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/decode.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/decode.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module decode
+
+Top level modules:
+	decode
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_4.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_4.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module shift_rotate_4
+
+Top level modules:
+	shift_rotate_4
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/cla16.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/cla16.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module cla16
+
+Top level modules:
+	cla16
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.1/verilog/memory2c_align.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.1/verilog/memory2c_align.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memory2c_align
+
+Top level modules:
+	memory2c_align
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/rf.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/rf.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/control.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/control.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/alu.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/alu.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/xor2.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/xor2.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module xor2
+
+Top level modules:
+	xor2
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_8.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_8.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module shift_rotate_8
+
+Top level modules:
+	shift_rotate_8
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/reg_cell.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/reg_cell.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module reg_cell
+
+Top level modules:
+	reg_cell
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/sign_extend.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/sign_extend.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module sign_extend
+
+Top level modules:
+	sign_extend
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/alu_control.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/alu_control.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module alu_control
+
+Top level modules:
+	alu_control
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/addr16.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/addr16.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module addr16
+
+Top level modules:
+	addr16
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/not1.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/not1.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/memory.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/memory.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/eightmux8_1.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/eightmux8_1.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module eightmux8_1
+
+Top level modules:
+	eightmux8_1
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/execute.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/execute.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module execute
+
+Top level modules:
+	execute
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/non_alu.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/non_alu.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module non_alu
+
+Top level modules:
+	non_alu
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nand3.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/nand3.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module nand3
+
+Top level modules:
+	nand3
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/proc.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/proc.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module proc
+
+Top level modules:
+	proc
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/rf_bypass.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/rf_bypass.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module rf_bypass
+
+Top level modules:
+	rf_bypass
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/xor3.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/xor3.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module xor3
+
+Top level modules:
+	xor3
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module shift_rotate
+
+Top level modules:
+	shift_rotate
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/mux2_1.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/mux2_1.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/writeback.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/writeback.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module writeback
+
+Top level modules:
+	writeback
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/mux4_1.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/mux4_1.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mux4_1
+
+Top level modules:
+	mux4_1
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.2/verilog/stallmem.syn.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.2/verilog/stallmem.syn.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module stallmem
+
+Top level modules:
+	stallmem
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/mux8_1.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/mux8_1.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mux8_1
+
+Top level modules:
+	mux8_1
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/fetch.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/fetch.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module fetch
+
+Top level modules:
+	fetch
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/forwarding.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/forwarding.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module forwarding
+
+Top level modules:
+	forwarding
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/proc_hier.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/proc_hier.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module proc_hier
+
+Top level modules:
+	proc_hier
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_2.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/shift_rotate_2.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module shift_rotate_2
+
+Top level modules:
+	shift_rotate_2
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/stall_flush.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2/verilog/stall_flush.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module stall_flush
+
+Top level modules:
+	stall_flush
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/register.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/register.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.2/verilog/stallmem.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo2.2/verilog/stallmem.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module stallmem
+
+Top level modules:
+	stallmem
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/decoder3_8.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/demo1/verilog/decoder3_8.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module decoder3_8
+
+Top level modules:
+	decoder3_8
+
+} {} {}}
