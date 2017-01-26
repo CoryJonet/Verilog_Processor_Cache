@@ -1,0 +1,2614 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : proc
+Version: B-2008.09-SP3
+Date   : Mon Apr 11 20:54:35 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_Instr[10]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U56/Y (OR2X2)                       0.05       1.44 r
+  stall_flush0/flush0/U18/Y (INVX2)                       0.04       1.47 f
+  stall_flush0/flush0/U156/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_Instr_flush<10> (flush)          0.00       1.52 f
+  stall_flush0/U141/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U574/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U216/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U217/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_Instr_sf<10> (stall_flush)              0.00       1.60 f
+  ID_IE_Instr[10]/d (dff_325)                             0.00       1.60 f
+  ID_IE_Instr[10]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_Instr[10]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_Instr[10]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_sign_ext[14]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U20/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U28/Y (INVX1)                       0.01       1.45 r
+  stall_flush0/flush0/U43/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U112/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_sign_ext_flush<14> (flush)       0.00       1.52 f
+  stall_flush0/U239/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U240/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U230/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U231/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_sign_ext_sf<14> (stall_flush)           0.00       1.60 f
+  ID_IE_sign_ext[14]/d (dff_281)                          0.00       1.60 f
+  ID_IE_sign_ext[14]/U3/Y (AND2X2)                        0.03       1.63 f
+  ID_IE_sign_ext[14]/state_reg/D (DFFPOSX1)               0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_sign_ext[14]/state_reg/CLK (DFFPOSX1)             0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_Instr[8]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U56/Y (OR2X2)                       0.05       1.44 r
+  stall_flush0/flush0/branch_or_jmp (flush)               0.00       1.44 r
+  stall_flush0/U155/Y (INVX1)                             0.02       1.46 f
+  stall_flush0/U186/Y (INVX1)                             0.01       1.47 r
+  stall_flush0/U431/Y (INVX2)                             0.03       1.50 f
+  stall_flush0/U572/Y (OR2X2)                             0.05       1.55 f
+  stall_flush0/U573/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U220/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U221/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_Instr_sf<8> (stall_flush)               0.00       1.60 f
+  ID_IE_Instr[8]/d (dff_323)                              0.00       1.60 f
+  ID_IE_Instr[8]/U3/Y (AND2X1)                            0.03       1.63 f
+  ID_IE_Instr[8]/state_reg/D (DFFPOSX1)                   0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_Instr[8]/state_reg/CLK (DFFPOSX1)                 0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_sign_ext[13]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U30/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U44/Y (INVX1)                       0.01       1.45 r
+  stall_flush0/flush0/U23/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U111/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_sign_ext_flush<13> (flush)       0.00       1.52 f
+  stall_flush0/U566/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U567/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U224/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U225/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_sign_ext_sf<13> (stall_flush)           0.00       1.60 f
+  ID_IE_sign_ext[13]/d (dff_280)                          0.00       1.60 f
+  ID_IE_sign_ext[13]/U3/Y (AND2X2)                        0.03       1.63 f
+  ID_IE_sign_ext[13]/state_reg/D (DFFPOSX1)               0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_sign_ext[13]/state_reg/CLK (DFFPOSX1)             0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_Instr[15]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U56/Y (OR2X2)                       0.05       1.44 r
+  stall_flush0/flush0/branch_or_jmp (flush)               0.00       1.44 r
+  stall_flush0/U155/Y (INVX1)                             0.02       1.46 f
+  stall_flush0/U674/Y (INVX1)                             0.01       1.47 r
+  stall_flush0/U192/Y (INVX1)                             0.02       1.49 f
+  stall_flush0/U2/Y (INVX1)                               0.01       1.50 r
+  stall_flush0/U3/Y (INVX1)                               0.02       1.51 f
+  stall_flush0/U370/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U371/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U169/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U170/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_Instr_sf<15> (stall_flush)              0.00       1.60 f
+  ID_IE_Instr[15]/d (dff_330)                             0.00       1.60 f
+  ID_IE_Instr[15]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_Instr[15]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_Instr[15]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_read1data[1]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U14/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U17/Y (INVX2)                       0.03       1.46 f
+  stall_flush0/flush0/U39/Y (INVX1)                       0.00       1.46 r
+  stall_flush0/flush0/U47/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U115/Y (AND2X2)                     0.04       1.53 f
+  stall_flush0/flush0/ID_read1data_flush<1> (flush)       0.00       1.53 f
+  stall_flush0/U297/Y (OR2X2)                             0.04       1.56 f
+  stall_flush0/U298/Y (INVX1)                             0.00       1.56 r
+  stall_flush0/U739/Y (AOI21X1)                           0.01       1.57 f
+  stall_flush0/ID_read1data_sf<1> (stall_flush)           0.00       1.57 f
+  ID_IE_read1data[1]/d (dff_284)                          0.00       1.57 f
+  ID_IE_read1data[1]/U5/Y (BUFX2)                         0.03       1.60 f
+  ID_IE_read1data[1]/U3/Y (AND2X2)                        0.03       1.63 f
+  ID_IE_read1data[1]/state_reg/D (DFFPOSX1)               0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_read1data[1]/state_reg/CLK (DFFPOSX1)             0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: IF_ID_Instr[11]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U20/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U28/Y (INVX1)                       0.01       1.45 r
+  stall_flush0/flush0/U21/Y (INVX1)                       0.02       1.47 f
+  stall_flush0/flush0/U184/Y (AND2X2)                     0.04       1.51 f
+  stall_flush0/flush0/IF_Instr_flush<11> (flush)          0.00       1.51 f
+  stall_flush0/U245/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U246/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U204/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U205/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/IF_Instr_sf<11> (stall_flush)              0.00       1.60 f
+  IF_ID_Instr[11]/d (dff_358)                             0.00       1.60 f
+  IF_ID_Instr[11]/U3/Y (AND2X2)                           0.03       1.63 f
+  IF_ID_Instr[11]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  IF_ID_Instr[11]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: IF_ID_Instr[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U56/Y (OR2X2)                       0.05       1.44 r
+  stall_flush0/flush0/U18/Y (INVX2)                       0.04       1.47 f
+  stall_flush0/flush0/U181/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/IF_Instr_flush<2> (flush)           0.00       1.52 f
+  stall_flush0/U235/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U236/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U212/Y (OR2X2)                             0.03       1.58 r
+  stall_flush0/U213/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/IF_Instr_sf<2> (stall_flush)               0.00       1.60 f
+  IF_ID_Instr[2]/d (dff_349)                              0.00       1.60 f
+  IF_ID_Instr[2]/U4/Y (AND2X1)                            0.03       1.63 f
+  IF_ID_Instr[2]/state_reg/D (DFFPOSX1)                   0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  IF_ID_Instr[2]/state_reg/CLK (DFFPOSX1)                 0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_pc_2_w[1]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U56/Y (OR2X2)                       0.05       1.44 r
+  stall_flush0/flush0/branch_or_jmp (flush)               0.00       1.44 r
+  stall_flush0/U155/Y (INVX1)                             0.02       1.46 f
+  stall_flush0/U674/Y (INVX1)                             0.01       1.47 r
+  stall_flush0/U192/Y (INVX1)                             0.02       1.49 f
+  stall_flush0/U2/Y (INVX1)                               0.01       1.50 r
+  stall_flush0/U1/Y (INVX1)                               0.02       1.52 f
+  stall_flush0/U247/Y (OR2X2)                             0.05       1.56 f
+  stall_flush0/U248/Y (INVX1)                             0.00       1.56 r
+  stall_flush0/U683/Y (AOI21X1)                           0.01       1.57 f
+  stall_flush0/ID_pc_2_w_sf<1> (stall_flush)              0.00       1.57 f
+  ID_IE_pc_2_w[1]/d (dff_247)                             0.00       1.57 f
+  ID_IE_pc_2_w[1]/U5/Y (BUFX2)                            0.03       1.60 f
+  ID_IE_pc_2_w[1]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_pc_2_w[1]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_pc_2_w[1]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_read2data[6]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U29/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U11/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U26/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U136/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_read2data_flush<6> (flush)       0.00       1.52 f
+  stall_flush0/U333/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U334/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U175/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U176/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_read2data_sf<6> (stall_flush)           0.00       1.60 f
+  ID_IE_read2data[6]/d (dff_305)                          0.00       1.60 f
+  ID_IE_read2data[6]/U3/Y (AND2X2)                        0.03       1.63 f
+  ID_IE_read2data[6]/state_reg/D (DFFPOSX1)               0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_read2data[6]/state_reg/CLK (DFFPOSX1)             0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_Instr[12]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U14/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U17/Y (INVX2)                       0.03       1.46 f
+  stall_flush0/flush0/U3/Y (INVX1)                        0.00       1.46 r
+  stall_flush0/flush0/U33/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U158/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_Instr_flush<12> (flush)          0.00       1.52 f
+  stall_flush0/U577/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U578/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U226/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U227/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_Instr_sf<12> (stall_flush)              0.00       1.60 f
+  ID_IE_Instr[12]/d (dff_327)                             0.00       1.60 f
+  ID_IE_Instr[12]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_Instr[12]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_Instr[12]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_pc_2_w[0]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U30/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U24/Y (INVX1)                       0.01       1.45 r
+  stall_flush0/flush0/U51/Y (INVX1)                       0.02       1.47 f
+  stall_flush0/flush0/U59/Y (AND2X2)                      0.04       1.51 f
+  stall_flush0/flush0/ID_pc_2_w_flush<0> (flush)          0.00       1.51 f
+  stall_flush0/U237/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U238/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U208/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U209/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_pc_2_w_sf<0> (stall_flush)              0.00       1.60 f
+  ID_IE_pc_2_w[0]/d (dff_246)                             0.00       1.60 f
+  ID_IE_pc_2_w[0]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_pc_2_w[0]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_pc_2_w[0]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: IF_ID_pc_2_w[6]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U29/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U48/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U7/Y (INVX2)                        0.03       1.48 f
+  stall_flush0/flush0/U169/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/IF_pc_2_w_flush<6> (flush)          0.00       1.52 f
+  stall_flush0/U233/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U234/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U228/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U229/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/IF_pc_2_w_sf<6> (stall_flush)              0.00       1.60 f
+  IF_ID_pc_2_w[6]/d (dff_337)                             0.00       1.60 f
+  IF_ID_pc_2_w[6]/U3/Y (AND2X2)                           0.03       1.63 f
+  IF_ID_pc_2_w[6]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  IF_ID_pc_2_w[6]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_pc_2_w[4]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U29/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U49/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U46/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U81/Y (AND2X2)                      0.04       1.52 f
+  stall_flush0/flush0/ID_pc_2_w_flush<4> (flush)          0.00       1.52 f
+  stall_flush0/U253/Y (OR2X2)                             0.04       1.56 f
+  stall_flush0/U254/Y (INVX1)                             0.00       1.56 r
+  stall_flush0/U689/Y (AOI21X1)                           0.01       1.57 f
+  stall_flush0/ID_pc_2_w_sf<4> (stall_flush)              0.00       1.57 f
+  ID_IE_pc_2_w[4]/d (dff_250)                             0.00       1.57 f
+  ID_IE_pc_2_w[4]/U5/Y (BUFX2)                            0.03       1.60 f
+  ID_IE_pc_2_w[4]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_pc_2_w[4]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_pc_2_w[4]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_Instr[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U14/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U55/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U25/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U52/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U148/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_Instr_flush<2> (flush)           0.00       1.52 f
+  stall_flush0/U473/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U474/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U218/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U219/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_Instr_sf<2> (stall_flush)               0.00       1.60 f
+  ID_IE_Instr[2]/d (dff_317)                              0.00       1.60 f
+  ID_IE_Instr[2]/U3/Y (AND2X2)                            0.03       1.63 f
+  ID_IE_Instr[2]/state_reg/D (DFFPOSX1)                   0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_Instr[2]/state_reg/CLK (DFFPOSX1)                 0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_read1data[14]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U29/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U49/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U46/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U128/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_read1data_flush<14> (flush)      0.00       1.52 f
+  stall_flush0/U317/Y (OR2X2)                             0.04       1.56 f
+  stall_flush0/U318/Y (INVX1)                             0.00       1.56 r
+  stall_flush0/U763/Y (AOI21X1)                           0.01       1.57 f
+  stall_flush0/ID_read1data_sf<14> (stall_flush)          0.00       1.57 f
+  ID_IE_read1data[14]/d (dff_297)                         0.00       1.57 f
+  ID_IE_read1data[14]/U5/Y (BUFX2)                        0.03       1.60 f
+  ID_IE_read1data[14]/U3/Y (AND2X2)                       0.03       1.63 f
+  ID_IE_read1data[14]/state_reg/D (DFFPOSX1)              0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_read1data[14]/state_reg/CLK (DFFPOSX1)            0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_Instr[5]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U14/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U55/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U35/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U36/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U151/Y (AND2X2)                     0.04       1.52 f
+  stall_flush0/flush0/ID_Instr_flush<5> (flush)           0.00       1.52 f
+  stall_flush0/U570/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U571/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U214/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U215/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_Instr_sf<5> (stall_flush)               0.00       1.60 f
+  ID_IE_Instr[5]/d (dff_320)                              0.00       1.60 f
+  ID_IE_Instr[5]/U3/Y (AND2X2)                            0.03       1.63 f
+  ID_IE_Instr[5]/state_reg/D (DFFPOSX1)                   0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_read2data[9]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U14/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U17/Y (INVX2)                       0.03       1.46 f
+  stall_flush0/flush0/U31/Y (INVX1)                       0.01       1.47 r
+  stall_flush0/flush0/U45/Y (INVX1)                       0.02       1.49 f
+  stall_flush0/flush0/U139/Y (AND2X2)                     0.04       1.53 f
+  stall_flush0/flush0/ID_read2data_flush<9> (flush)       0.00       1.53 f
+  stall_flush0/U339/Y (OR2X2)                             0.04       1.56 f
+  stall_flush0/U340/Y (INVX1)                             0.00       1.56 r
+  stall_flush0/U784/Y (AOI21X1)                           0.01       1.57 f
+  stall_flush0/ID_read2data_sf<9> (stall_flush)           0.00       1.57 f
+  ID_IE_read2data[9]/d (dff_308)                          0.00       1.57 f
+  ID_IE_read2data[9]/U5/Y (BUFX2)                         0.03       1.60 f
+  ID_IE_read2data[9]/U3/Y (AND2X2)                        0.03       1.63 f
+  ID_IE_read2data[9]/state_reg/D (DFFPOSX1)               0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_read2data[9]/state_reg/CLK (DFFPOSX1)             0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: IF_ID_halt/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U14/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U17/Y (INVX2)                       0.03       1.46 f
+  stall_flush0/flush0/U31/Y (INVX1)                       0.01       1.47 r
+  stall_flush0/flush0/U45/Y (INVX1)                       0.02       1.49 f
+  stall_flush0/flush0/U162/Y (AND2X2)                     0.04       1.53 f
+  stall_flush0/flush0/IF_halt_flush (flush)               0.00       1.53 f
+  stall_flush0/U384/Y (OR2X2)                             0.04       1.56 f
+  stall_flush0/U385/Y (INVX1)                             0.00       1.56 r
+  stall_flush0/U851/Y (AOI21X1)                           0.01       1.57 f
+  stall_flush0/IF_halt_sf (stall_flush)                   0.00       1.57 f
+  IF_ID_halt/d (dff_385)                                  0.00       1.57 f
+  IF_ID_halt/U5/Y (BUFX2)                                 0.03       1.60 f
+  IF_ID_halt/U3/Y (AND2X2)                                0.03       1.63 f
+  IF_ID_halt/state_reg/D (DFFPOSX1)                       0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  IF_ID_halt/state_reg/CLK (DFFPOSX1)                     0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+  Startpoint: ID_IE_Instr[5]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ID_IE_pc_2_w[5]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ID_IE_Instr[5]/state_reg/CLK (DFFPOSX1)                 0.00 #     0.00 r
+  ID_IE_Instr[5]/state_reg/Q (DFFPOSX1)                   0.11       0.11 f
+  ID_IE_Instr[5]/q (dff_320)                              0.00       0.11 f
+  forward_module/IE_Instr_out<5> (forwarding)             0.00       0.11 f
+  forward_module/U266/Y (XOR2X1)                          0.05       0.16 r
+  forward_module/U129/Y (OR2X2)                           0.05       0.21 r
+  forward_module/U130/Y (INVX1)                           0.02       0.22 f
+  forward_module/U127/Y (AND2X2)                          0.04       0.26 f
+  forward_module/U128/Y (INVX1)                           0.00       0.25 r
+  forward_module/U250/Y (AND2X2)                          0.04       0.29 r
+  forward_module/U3/Y (AND2X2)                            0.04       0.33 r
+  forward_module/U56/Y (AND2X2)                           0.03       0.37 r
+  forward_module/U37/Y (OR2X2)                            0.04       0.40 r
+  forward_module/forward_B_data<5> (forwarding)           0.00       0.40 r
+  execute0/read2data<5> (execute)                         0.00       0.40 r
+  execute0/U39/Y (AND2X2)                                 0.03       0.44 r
+  execute0/U40/Y (INVX1)                                  0.01       0.45 f
+  execute0/U115/Y (OAI21X1)                               0.02       0.47 r
+  execute0/alu0/B<5> (alu)                                0.00       0.47 r
+  execute0/alu0/U173/Y (AND2X2)                           0.03       0.51 r
+  execute0/alu0/U36/Y (OR2X2)                             0.04       0.55 r
+  execute0/alu0/arith_block/B<5> (alu_arith_block)        0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/B<5> (addr16)      0.00       0.55 r
+  execute0/alu0/arith_block/add_or_sub/U8/Y (XNOR2X1)     0.03       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/b<5> (cla16_0)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/b<1> (cla4_2)
+                                                          0.00       0.58 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U88/Y (OR2X2)
+                                                          0.05       0.63 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U62/Y (NAND3X1)
+                                                          0.03       0.66 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U39/Y (BUFX2)
+                                                          0.03       0.70 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U74/Y (AND2X2)
+                                                          0.03       0.73 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U22/Y (OR2X2)
+                                                          0.04       0.77 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U41/Y (AND2X2)
+                                                          0.03       0.80 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U42/Y (INVX1)
+                                                          0.01       0.81 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U34/Y (OR2X2)
+                                                          0.04       0.85 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/U65/Y (AND2X2)
+                                                          0.03       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl1/cout (cla4_2)
+                                                          0.00       0.88 f
+  execute0/alu0/arith_block/add_or_sub/adder/U16/Y (AND2X2)
+                                                          0.03       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cin (cla4_1)
+                                                          0.00       0.92 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U39/Y (OR2X2)
+                                                          0.04       0.95 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/U20/Y (AND2X2)
+                                                          0.03       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl2/cout (cla4_1)
+                                                          0.00       0.98 f
+  execute0/alu0/arith_block/add_or_sub/adder/U24/Y (OAI21X1)
+                                                          0.01       1.00 r
+  execute0/alu0/arith_block/add_or_sub/adder/U11/Y (INVX1)
+                                                          0.03       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/cin (cla4_0)
+                                                          0.00       1.03 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U49/Y (INVX1)
+                                                          0.01       1.04 r
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/U50/Y (MUX2X1)
+                                                          0.03       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/cl3/sum<0> (cla4_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/adder/sum<12> (cla16_0)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/add_or_sub/Out<12> (addr16)
+                                                          0.00       1.07 f
+  execute0/alu0/arith_block/U39/Y (OR2X2)                 0.05       1.12 f
+  execute0/alu0/arith_block/U27/Y (OR2X2)                 0.04       1.15 f
+  execute0/alu0/arith_block/U26/Y (OR2X2)                 0.05       1.20 f
+  execute0/alu0/arith_block/U40/Y (AND2X2)                0.04       1.24 f
+  execute0/alu0/arith_block/U41/Y (INVX1)                 0.00       1.23 r
+  execute0/alu0/arith_block/U68/Y (AND2X2)                0.03       1.27 r
+  execute0/alu0/arith_block/eq (alu_arith_block)          0.00       1.27 r
+  execute0/alu0/Eqz (alu)                                 0.00       1.27 r
+  execute0/branch_control0/eqz (branch_control)           0.00       1.27 r
+  execute0/branch_control0/U5/Y (AND2X2)                  0.03       1.30 r
+  execute0/branch_control0/U6/Y (INVX1)                   0.02       1.31 f
+  execute0/branch_control0/U24/Y (NAND3X1)                0.03       1.34 r
+  execute0/branch_control0/taken (branch_control)         0.00       1.34 r
+  execute0/BranchTaken (execute)                          0.00       1.34 r
+  U46/Y (BUFX2)                                           0.04       1.39 r
+  stall_flush0/IE_BranchTaken_out (stall_flush)           0.00       1.39 r
+  stall_flush0/flush0/BranchTaken (flush)                 0.00       1.39 r
+  stall_flush0/flush0/U71/Y (OR2X2)                       0.04       1.43 r
+  stall_flush0/flush0/U29/Y (INVX1)                       0.02       1.45 f
+  stall_flush0/flush0/U11/Y (INVX1)                       0.01       1.46 r
+  stall_flush0/flush0/U26/Y (INVX1)                       0.02       1.48 f
+  stall_flush0/flush0/U82/Y (AND2X2)                      0.04       1.52 f
+  stall_flush0/flush0/ID_pc_2_w_flush<5> (flush)          0.00       1.52 f
+  stall_flush0/U255/Y (OR2X2)                             0.04       1.55 f
+  stall_flush0/U256/Y (INVX1)                             0.00       1.55 r
+  stall_flush0/U179/Y (OR2X2)                             0.03       1.59 r
+  stall_flush0/U180/Y (INVX1)                             0.01       1.60 f
+  stall_flush0/ID_pc_2_w_sf<5> (stall_flush)              0.00       1.60 f
+  ID_IE_pc_2_w[5]/d (dff_251)                             0.00       1.60 f
+  ID_IE_pc_2_w[5]/U3/Y (AND2X2)                           0.03       1.63 f
+  ID_IE_pc_2_w[5]/state_reg/D (DFFPOSX1)                  0.00       1.63 f
+  data arrival time                                                  1.63
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ID_IE_pc_2_w[5]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.69
+
+
+1
