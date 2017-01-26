@@ -1,0 +1,8 @@
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_1_idcache.asm SUCCESS CPI:46.2 CYCLES:16601 ICOUNT:359 IHITRATE: 0.0 DHITRATE: 1.0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_2_idcache.asm SUCCESS CPI:44.4 CYCLES:15809 ICOUNT:356 IHITRATE: 0.0 DHITRATE: 1.9
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_3_idcache.asm SUCCESS CPI:43.6 CYCLES:16433 ICOUNT:377 IHITRATE: 0.0 DHITRATE: 0.8
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_4_idcache.asm SUCCESS CPI:48.5 CYCLES:15941 ICOUNT:329 IHITRATE: 0.0 DHITRATE: 0.7
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_5_idcache.asm SUCCESS CPI:48.2 CYCLES:15989 ICOUNT:332 IHITRATE: 0.0 DHITRATE: 1.0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_6_idcache.asm SUCCESS CPI:45.6 CYCLES:16109 ICOUNT:353 IHITRATE: 0.0 DHITRATE: 1.4
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_7_idcache.asm SUCCESS CPI:42.4 CYCLES:16889 ICOUNT:398 IHITRATE: 0.0 DHITRATE: 1.1
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_idcache/t_8_idcache.asm SUCCESS CPI:44.3 CYCLES:16445 ICOUNT:371 IHITRATE: 0.0 DHITRATE: 0.8

@@ -1,0 +1,5 @@
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/complex_demo1/branchTest.asm SUCCESS CPI:30.5 CYCLES:641 ICOUNT:21 IHITRATE: 0.0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/complex_demo1/easyTest.asm SUCCESS CPI:52.5 CYCLES:2153 ICOUNT:41 IHITRATE: 0.0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/complex_demo1/firstTest.asm SUCCESS CPI:13.9 CYCLES:569 ICOUNT:41 IHITRATE: 0.0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/complex_demo1/loadStoreTest.asm SUCCESS CPI:13.1 CYCLES:485 ICOUNT:37 IHITRATE: 0.0 DHITRATE: 7.1
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/complex_demo1/shiftTest.asm SUCCESS CPI:12.4 CYCLES:1205 ICOUNT:97 IHITRATE: 0.0 DHITRATE: 0

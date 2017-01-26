@@ -1,0 +1,8 @@
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_1_mem.asm SUCCESS CPI:5.9 CYCLES:9103 ICOUNT:1535 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_2_mem.asm SUCCESS CPI:5.9 CYCLES:9432 ICOUNT:1596 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_3_mem.asm SUCCESS CPI:6.1 CYCLES:8783 ICOUNT:1445 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_4_mem.asm SUCCESS CPI:6.1 CYCLES:8151 ICOUNT:1328 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_5_mem.asm SUCCESS CPI:6.1 CYCLES:9007 ICOUNT:1484 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_6_mem.asm SUCCESS CPI:6.1 CYCLES:8760 ICOUNT:1445 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_7_mem.asm SUCCESS CPI:5.9 CYCLES:9236 ICOUNT:1555 IHITRATE: 0 DHITRATE: 0
+/u/k/a/karu/courses/cs552/spring2013/handouts/testprograms/public/rand_mem/t_8_mem.asm SUCCESS CPI:6.2 CYCLES:8687 ICOUNT:1405 IHITRATE: 0 DHITRATE: 0
