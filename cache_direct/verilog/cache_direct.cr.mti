@@ -1,0 +1,99 @@
+/afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/final_memory.syn.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/final_memory.syn.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module final_memory
+
+Top level modules:
+	final_memory
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/final_memory.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/final_memory.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module final_memory
+
+Top level modules:
+	final_memory
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memc.syn.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memc.syn.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memc
+
+Top level modules:
+	memc
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memc.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memc.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memc
+
+Top level modules:
+	memc
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/cache.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/cache.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module cache
+
+Top level modules:
+	cache
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memv.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memv.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memv
+
+Top level modules:
+	memv
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memv.syn.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/memv.syn.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module memv
+
+Top level modules:
+	memv
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/four_bank_mem.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/four_bank_mem.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module four_bank_mem
+
+Top level modules:
+	four_bank_mem
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_perfbench.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_perfbench.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mem_system_perfbench
+
+Top level modules:
+	mem_system_perfbench
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_ref.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_ref.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mem_system_ref
+
+Top level modules:
+	mem_system_ref
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/dff.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/dff.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_hier.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_hier.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mem_system_hier
+
+Top level modules:
+	mem_system_hier
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/clkrst.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/clkrst.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_randbench.v {1 {vlog -work work /afs/cs.wisc.edu/u/j/o/jonet/private/ece552/project/cache_direct/verilog/mem_system_randbench.v
+Model Technology ModelSim SE vlog 5.8b Compiler 2004.01 Jan 26 2004
+-- Compiling module mem_system_randbench
+
+Top level modules:
+	mem_system_randbench
+
+} {} {}}
